@@ -1,0 +1,111 @@
+.header
+{
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    padding: 0.5rem calc((100vw - 1200px) /2);
+    z-index: 10;
+
+    background: #FFFFFF;
+
+    .header-rectangle
+    {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 61px;
+        padding: 2rem;
+        top: 2rem;
+    
+        .header-logo
+        {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .navbar-collapse.collapse
+        {
+            background-color: #FFFFFF;
+            border-radius: 10px;
+        }
+
+        .apitext
+        {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+
+            margin-top: 1vh;
+            color: #000000;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+
+        .contact
+        {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+
+            color: #000000;
+
+            margin-right: 1vh;
+            margin-top: 1vh;
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+
+        .loginbutton
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 7px 16px;
+            color: #FFFFFF;
+        
+            box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+            border-radius: 2px;
+        }
+
+        .logoutbutton
+        {
+            width: 48px;
+            height: 48px;
+
+            background: #35A2D4;
+            border-radius: 30px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            color: #FFFFFF;
+            font-size: 20px;
+            line-height: 15px;
+        }
+    }
+
+
+}
+
+
+
+
+

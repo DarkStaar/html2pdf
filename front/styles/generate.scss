@@ -1,0 +1,215 @@
+@import './media-queries';
+
+.box
+{
+    display: flex;
+    position: absolute;
+
+    margin-top: 200px;
+    left: 100px;
+    right: 50px;
+
+    @include mobile 
+    {
+        flex-direction: row;
+        left: 5%;
+        width: 90%;
+    }
+
+    @include tablet 
+    {
+        flex-direction: row;
+        left: 5%;
+        width: 90%;
+    }
+
+    @include desktop
+    {
+        top: 15%;
+        width: 90%;
+        left: 20%;
+    }
+
+    .generate-box
+    {
+        width: 514px;
+        height: 226px;
+        left: 205px;
+        top: 266px;
+        margin-right: 100px;
+
+        @include mobile
+        {
+            margin-top: 120%;
+            width: auto;
+            align-self: center;
+        }
+
+        @include tablet 
+        {
+            margin-top: 100%;
+            width: auto;
+            align-self: center;
+        }
+
+        .generate-text-header
+        {
+            width: 513px;
+            height: 128px;
+            left: 206px;
+            top: 266px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 36px;
+
+            color: #000000;
+
+            @include mobile
+            {
+                text-align: center;
+                width: 100%;
+                margin-left: 10%;
+            }
+
+            @include tablet
+            {
+                text-align: center;
+                width: 100%;
+                margin-left: 10%;
+            }
+        }
+
+        .generate-text
+        {
+            width: 513px;
+            height: 128px;
+            left: 206px;
+            top: 266px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+
+            color: #000000;
+
+            @include mobile
+            {
+                text-align: center;
+                margin-left: 10%;
+                width: 100%;
+                left: 0;
+                top: auto;
+            }
+
+            @include tablet
+            {
+                text-align: center;
+                margin-left: 10%;
+                width: 100%;
+                left: 0;
+                top: 5%;
+            }
+        }
+
+        .generated-area
+        {
+            @include mobile
+            {
+                margin-left: 10%;
+                width: 100%;
+            }
+
+            @include tablet 
+            {
+                margin-left: 10%;
+                width: 100%;
+            }
+
+            @include desktop
+            {
+                width: 100%;
+                margin-bottom: 5%;
+            }
+        }
+
+        .generate-button
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5px 16px;
+
+            width: 270px;
+            height: 45px;
+            left: 205px;
+            top: 447px;
+
+            background: #F26557;
+
+            box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+            border-radius: 2px;
+
+            @include mobile
+            {
+                margin-left: 10%;
+            }
+
+            @include tablet 
+            {
+                margin-left: 37%;
+            }
+        }
+
+        .generated-button
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5px 16px;
+
+            width: 270px;
+            height: 45px;
+            left: 205px;
+            top: 447px;
+
+            background: #35A2D4;
+
+            box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+            border-radius: 2px;
+
+            @include mobile
+            {
+                margin-left: 10%;
+            }
+
+            @include tablet
+            {
+                margin-left: 37%;
+            }
+        }
+    }
+
+    .generate-image
+    {
+        @include mobile 
+        {
+            position: absolute;
+            width: 90%;
+            margin-left: 5%;
+        }
+
+        @include tablet 
+        {
+            position: absolute;
+            width: 85%;
+            margin-left: 7.5%;
+        }
+    }
+}
